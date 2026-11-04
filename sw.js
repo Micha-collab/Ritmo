@@ -1,7 +1,7 @@
 /* Ritmo — service worker: guarda la app para que abra sin internet */
 const VERSION = 'ritmo-v1';
 const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'manifest.webmanifest',
-  'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'];
+  'icon-192.png', 'icon-512.png', 'apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
