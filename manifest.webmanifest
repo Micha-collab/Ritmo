@@ -1,0 +1,17 @@
+{
+  "name": "Ritmo",
+  "short_name": "Ritmo",
+  "description": "Alimentación, entrenos, sueño y medidas corporales. Tus datos se quedan en tu teléfono.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#EEF0F4",
+  "theme_color": "#EEF0F4",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

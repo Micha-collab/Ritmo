@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Ritmo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#EEF0F4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0E13" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Ritmo">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="view" aria-live="polite"></main>
+
+<div id="session" hidden></div>
+
+<nav class="tabbar" aria-label="Secciones">
+  <button class="tab" data-tab="today" data-act="tab" data-arg="today">
+    <svg viewBox="0 0 24 24"><rect x="4" y="4" width="6.5" height="6.5" rx="2"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="2"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="2"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="2"/></svg>Hoy
+  </button>
+  <button class="tab" data-tab="food" data-act="tab" data-arg="food">
+    <svg viewBox="0 0 24 24"><path d="M12 8.2c-2-1.9-6.2-1-6.2 4 0 4 2.9 7.8 6.2 7.8s6.2-3.8 6.2-7.8c0-5-4.2-5.9-6.2-4z"/><path d="M12 8.2c0-2 1-3.3 3-4.2"/></svg>Comida
+  </button>
+  <button class="tab" data-tab="train" data-act="tab" data-arg="train">
+    <svg viewBox="0 0 24 24"><path d="M6.5 7.5v9M3.5 10v4M17.5 7.5v9M20.5 10v4M6.5 12h11"/></svg>Entreno
+  </button>
+  <button class="tab" data-tab="sleep" data-act="tab" data-arg="sleep">
+    <svg viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>Sueño
+  </button>
+  <button class="tab" data-tab="body" data-act="tab" data-arg="body">
+    <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4.5"/><path d="M8.5 9.5a5 5 0 0 1 7 0M12 13.5l2-2.6"/></svg>Cuerpo
+  </button>
+</nav>
+
+<script src="app.js"></script>
+</body>
+</html>
